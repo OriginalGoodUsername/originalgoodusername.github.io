@@ -1,0 +1,20 @@
+{
+  "slug": "robotic-hand",
+  "title": "Gesture-controlled robotic hand",
+  "summary": "I built a robotic hand that uses webcam hand tracking to control five finger servos and one wrist servo without a glove.",
+  "tools": ["Python", "OpenCV", "MediaPipe", "Arduino", "PCA9685"],
+  "paragraphs": [
+    "I built a robotic hand that copies my hand movements from a webcam without a glove. It has five finger servos and one wrist servo. I implemented the controller in Python and Arduino, connecting hand tracking to the physical hand's movement.",
+    "My Python controller uses OpenCV and MediaPipe to process webcam hand landmarks. It maps the landmark geometry to finger curl and thumb position, then converts these into six calibrated servo angles. Commands go over serial to an Arduino, which drives the servos through a PCA9685. I used calibrated open and closed angles, with a separate range for the thumb.",
+    "The command pipeline uses exponential moving-average smoothing and limits how far servo commands can change per frame. When webcam tracking disappears, the Python controller briefly holds the last tracked pose before returning toward an open hand. Manual control and a servo-test utility let me adjust the calibrated angles."
+  ],
+  "github": "https://github.com/OriginalGoodUsername/gesture-controlled-robotic-hand",
+  "cover": "photo_12",
+  "media": [
+    {
+      "id": "photo_12",
+      "alt": "Purple robotic hand with exposed wiring beside a laptop showing a webcam hand view overlaid with landmark dots and lines.",
+      "caption": "My robotic hand beside the laptop's webcam hand-landmark view."
+    }
+  ]
+}

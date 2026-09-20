@@ -1,0 +1,30 @@
+{
+  "slug": "quadcopter",
+  "title": "ESP32 Quadcopter",
+  "summary": "I assembled an F450 quadcopter and built an ESP32-S3 transmitter to fly it with a Logitech F310 gamepad over ESP-NOW.",
+  "tools": ["C++", "ESP32", "ESP32-S3", "ESP-NOW", "esp-fc", "Arduino"],
+  "paragraphs": [
+    "I assembled an F450 quadcopter with an ESP32 flight controller running esp-fc. I wired an MPU-6500 IMU, BMP280 barometer and QMC5883L magnetometer over I2C for motion, pressure and heading measurements. I mapped a Logitech F310 USB gamepad's inputs and integrated the ESP32-S3 transmitter with the receiver to send flight and arm/disarm commands over ESP-NOW. Stabilization, sensor fusion, the PID controller and motor mixer come from esp-fc.",
+    "The F310 throttle stick springs back to centre, which means roughly half throttle in manual mode. I implemented arming with the throttle down and the right bumper pressed, disarming with the left bumper, and a limit on how quickly throttle commands change.",
+    "I calibrated all four ESCs, checked motor mapping and spin direction, and confirmed flight-channel inputs in the receiver monitor. I completed outdoor takeoff, hover and manual gamepad flight with self-level stabilization. I also built separate Arduino flight firmware that can fly this quadcopter as an alternative to esp-fc."
+  ],
+  "github": "https://github.com/OriginalGoodUsername/esp32-quadcopter",
+  "cover": "photo_02",
+  "media": [
+    {
+      "id": "photo_02",
+      "alt": "Overhead view of a quadcopter with red propellers, red and white arms, and exposed central electronics on a table.",
+      "caption": "Overhead view of my assembled F450 quadcopter."
+    },
+    {
+      "id": "photo_01",
+      "alt": "Assembled quadcopter leaning against a white wall, with red propellers and wiring around the central electronics board.",
+      "caption": "My assembled quadcopter, showing the central electronics and wiring."
+    },
+    {
+      "id": "photo_03",
+      "alt": "Betaflight Configurator Setup tab showing a tilted quadcopter model, attitude readouts and an Arming Disabled status.",
+      "caption": "Betaflight Configurator interface, Setup tab."
+    }
+  ]
+}

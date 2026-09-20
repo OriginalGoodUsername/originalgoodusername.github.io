@@ -1,0 +1,76 @@
+{
+  "name": "Vraj Patel",
+  "role": "Engineering student at Queen's University",
+  "email": "patelvraj2020@gmail.com",
+  "linkedin": "https://linkedin.com/in/vraj-patel-246a71277",
+  "github": "https://github.com/OriginalGoodUsername",
+  "education": {
+    "school": "Queen's University",
+    "degree": "BASc, Engineering",
+    "dates": "Sep 2026 - Apr 2030 (expected)",
+    "location": "Kingston, ON"
+  },
+  "experience": [
+    {
+      "title": "Founder & Captain, FTC Teams #27964 & #32514",
+      "organization": "William Lyon Mackenzie CI, Toronto, ON",
+      "dates": "Sep 2023 - Jun 2026",
+      "bullets": [
+        "Founded a school robotics program with a general robotics club, appointed technical leads, and led 50+ members across two FTC teams.",
+        "Led the FTC mechanical sub-team, designing the mecanum drivetrain and manipulator arm in Fusion 360 and assembling the school's first competition robot in two months.",
+        "Led weekly Arduino workshops and school outreach, introducing 100+ students to electronics and programming."
+      ]
+    },
+    {
+      "title": "Database Designer (Co-op)",
+      "organization": "Access Group Inc., Toronto, ON",
+      "dates": "Sep 2024 - Feb 2025",
+      "bullets": [
+        "Automated Intune, Defender, and remote-monitoring reports with PowerShell and Power BI, replacing manual Excel reports.",
+        "Built Power BI dashboards from ConnectWise API data, giving IT staff access to account information for 100 users."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "ESP32 Quadcopter | C++, ESP32",
+      "dates": "Jul - Aug 2026",
+      "bullets": [
+        "Built a transmitter around an F310 gamepad and ESP32-S3, sending throttle, roll, pitch, yaw, and arm/disarm commands over ESP-NOW.",
+        "Assembled an F450 quadcopter with an ESP32 flight controller running esp-fc for takeoff, hover, and manual flight.",
+        "Wired an MPU-6500 IMU, BMP280 barometer, and QMC5883L magnetometer to the quadcopter's ESP32 over I2C for motion, pressure, and heading measurements."
+      ],
+      "github": "https://github.com/OriginalGoodUsername/esp32-quadcopter"
+    },
+    {
+      "title": "6-DOF Robotic Arm | Python, Arduino",
+      "dates": "Jan - Mar 2026",
+      "bullets": [
+        "Designed and assembled a 3D-printed arm with six servos, two at the shoulder, and a NEMA-17 stepper base.",
+        "Programmed the arm to reach typed 3D coordinates using Python inverse kinematics, keeping each joint within its limits.",
+        "Developed an interface with sliders and a 3D arm view to control the arm over a serial link to Arduino."
+      ],
+      "github": "https://github.com/OriginalGoodUsername/6dof-robotic-arm"
+    },
+    {
+      "title": "Guitar Effects Pedal PCBs | KiCad",
+      "dates": "Sep - Nov 2025",
+      "bullets": [
+        "Created KiCad layouts and Gerber files for Boss DS-1, Big Muff Pi, and EHX LPB-1 pedals from existing schematics.",
+        "Soldered and debugged three working through-hole pedals, applying gain staging, clipping, and biasing."
+      ],
+      "github": "https://github.com/OriginalGoodUsername/guitar-effects-pedal-pcbs"
+    }
+  ],
+  "award": {
+    "title": "1st Place in Canada - CyberTitan 2026",
+    "detail": "National cybersecurity competition; six-person team; Windows system hardening."
+  },
+  "skills": [
+    "Design: KiCad, Fusion 360, SolidWorks, Onshape",
+    "Hardware & fabrication: ESP32, RP2040, STM32, Raspberry Pi, soldering, 3D printing",
+    "Programming: C, C++, Python, PowerShell",
+    "Controls: PID control, robot kinematics",
+    "Software tools: Linux, Git/GitHub"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Vraj Patel",
+  "role": "Engineering student at Queen's University",
+  "intro": "I build robots and electronics, from a gamepad-controlled quadcopter to guitar pedal PCBs.",
+  "about": "I like figuring out how mechanical parts, electronics and code work together. Most of what I know has come from choosing a project and learning what it needs, whether that's soldering a board or programming a robot. In high school, I founded a robotics program and led 50+ members across two FTC teams.",
+  "project_order": [
+    "quadcopter",
+    "robotic-arm",
+    "robotic-hand",
+    "pedal-pcbs",
+    "spider-robot"
+  ]
+}

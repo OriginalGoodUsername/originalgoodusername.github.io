@@ -1,0 +1,30 @@
+{
+  "slug": "robotic-arm",
+  "title": "6-DOF Robotic Arm",
+  "summary": "I designed and assembled a 3D-printed arm, integrating Python control with Arduino and calibrated servo commands.",
+  "tools": ["Python", "Arduino", "Matplotlib", "PCA9685", "A4988", "NEMA-17"],
+  "paragraphs": [
+    "I designed and assembled a 3D-printed arm with six servos, two at the shoulder, and a NEMA-17 stepper base. The Python controller takes typed 3D target coordinates and uses inverse kinematics to search gripper pitch for a solution within joint limits. I connected Python to Arduino over serial, with a PCA9685 driving the servos and an A4988 driving the stepper.",
+    "The shoulder servos are mirrored, and the channel mapping has to account for reversed physical wiring. I used two calibration poses to map joint angles to servo commands, with linear interpolation between those poses.",
+    "The pictured Python/Matplotlib interface has reach, height and base-yaw sliders alongside a 3D arm view. Reach and base yaw set the target's X/Y coordinates, and height sets Z. The target marker turns green or red to show whether the solver reports a solution. The tool opens in simulation mode and includes an optional serial-control mode."
+  ],
+  "github": "https://github.com/OriginalGoodUsername/6dof-robotic-arm",
+  "cover": "photo_10",
+  "media": [
+    {
+      "id": "photo_09",
+      "alt": "Blue robotic arm and exposed control electronics beside a laptop displaying a 3D arm plot and sliders.",
+      "caption": "Assembled arm and electronics beside the laptop's 3D arm view and sliders."
+    },
+    {
+      "id": "photo_10",
+      "alt": "Assembled blue robotic arm on a black base, with its gripper holding a black object and wired electronics alongside.",
+      "caption": "Arm gripper holding a black object, with control electronics beside the base."
+    },
+    {
+      "id": "photo_11",
+      "alt": "Matplotlib screenshot showing a blue articulated arm model, a green star target and sliders labelled Reach, Height and Base yaw.",
+      "caption": "Python/Matplotlib interface with reach, height and base-yaw sliders, a 3D arm model and a green target marker."
+    }
+  ]
+}

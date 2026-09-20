@@ -1,0 +1,40 @@
+{
+  "slug": "pedal-pcbs",
+  "title": "Guitar effects pedal PCBs",
+  "summary": "I laid out, soldered and debugged three working guitar effects pedal boards from existing schematics.",
+  "tools": ["KiCad"],
+  "paragraphs": [
+    "I built three guitar effects pedal boards based on the Boss DS-1, Big Muff Pi and EHX LPB-1 between September and November 2025. I worked from existing schematics, placing components and routing the PCB layouts in KiCad, then producing Gerber files.",
+    "My LPB-1 layout fits four resistors, two capacitors and a transistor on a small board. The Big Muff Pi design has four transistor packages and labelled input, power, ground and output connections. My DS-1 design includes an eight-pin socket and a barrel power jack, visible in the KiCad 3D view.",
+    "I soldered the through-hole components and debugged the boards, applying gain staging, clipping and biasing. My work took these established circuits from PCB layout through assembly. All three boards are working."
+  ],
+  "github": "https://github.com/OriginalGoodUsername/guitar-effects-pedal-pcbs",
+  "cover": "photo_05",
+  "media": [
+    {
+      "id": "photo_04",
+      "alt": "Three bare green pedal PCBs on a gridded work mat: DS-1 at left, Big Muff Pi in the middle and the smaller LPB-1 at right.",
+      "caption": "The three pedal PCBs before components were fitted."
+    },
+    {
+      "id": "photo_05",
+      "alt": "Populated DS-1 and Big Muff Pi boards on a work mat, with the smaller LPB-1 held above them and wired potentiometers attached.",
+      "caption": "The populated DS-1, Big Muff Pi and LPB-1 boards."
+    },
+    {
+      "id": "photo_06",
+      "alt": "KiCad 3D render of the Big Muff Pi PCB with through-hole component models and labelled input, power, ground and output connections.",
+      "caption": "KiCad 3D render of my Big Muff Pi PCB layout."
+    },
+    {
+      "id": "photo_07",
+      "alt": "KiCad 3D render of the Boss DS-1 PCB with component models, an empty eight-pin socket and a barrel power jack.",
+      "caption": "KiCad 3D render of my Boss DS-1 PCB layout."
+    },
+    {
+      "id": "photo_08",
+      "alt": "KiCad 3D render of the small LPB-1 PCB with four resistors, two disc capacitors, a central transistor and connector pins.",
+      "caption": "KiCad 3D render of my EHX LPB-1 PCB layout."
+    }
+  ]
+}

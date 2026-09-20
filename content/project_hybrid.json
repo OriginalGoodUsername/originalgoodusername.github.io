@@ -1,0 +1,36 @@
+{
+  "slug": "spider-robot",
+  "title": "Hybrid Quadruped Robot",
+  "summary": "I designed and built a robot that combines four-leg walking with four-wheel drive.",
+  "tools": [
+    "Arduino Nano ESP32",
+    "PCA9685",
+    "TB6612",
+    "FreeRTOS",
+    "ESP-NOW"
+  ],
+  "paragraphs": [
+    "I designed and built a robot that combines four-leg walking with four-wheel drive. The current build uses an Arduino Nano ESP32, twelve leg servos, a PCA9685 and four DC motors driven by two TB6612 drivers. My work covered the mechanical design and integration of the walking and wheeled controls.",
+    "I adapted legacy gait code credited to SunFounder, Regis Hsu and Anuchit. Its AVR timer-based servo loop needed to change for the ESP32, so I replaced the timer-interrupt loop with a FreeRTOS task. I also integrated an ESP-NOW gamepad link. The project's hardware tools support I2C scanning, individual servo and motor tests, servo centering and calibration-pulse recording.",
+    "I also personally built the earlier V1 spider robot, shown in purple below."
+  ],
+  "github": "https://github.com/OriginalGoodUsername/hybrid-quadruped-robot",
+  "cover": "photo_13",
+  "media": [
+    {
+      "id": "photo_13",
+      "alt": "Current green robot resting on a wooden surface, with four jointed legs, wheels and exposed wiring.",
+      "caption": "Current green hybrid robot with its leg and wheel assembly."
+    },
+    {
+      "id": "photo_14",
+      "alt": "Current green robot held upright in one hand, showing its bent leg joints, wheels and central wiring.",
+      "caption": "Current green hybrid robot held upright, showing its leg joints and wheels."
+    },
+    {
+      "id": "photo_15",
+      "alt": "Purple V1 spider robot on a table, with four legs and exposed wiring above its frame.",
+      "caption": "V1: the earlier four-legged spider robot I built."
+    }
+  ]
+}
